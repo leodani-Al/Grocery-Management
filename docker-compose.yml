@@ -1,9 +1,7 @@
 version: '3'
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: joel003/grocery-management-web:v1
     ports:
       - "8000:80" # Map host port 8080 to container port 80
     volumes:
