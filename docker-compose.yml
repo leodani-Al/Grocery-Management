@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80" # Map host port 8080 to container port 80
+    volumes:
+      - ./html:/usr/share/nginx/html # Mount the HTML/CSS files into the container
